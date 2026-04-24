@@ -71,7 +71,7 @@ export class PricingStateService {
     });
   }
 
-  updateAdditionalCharge(key: string, field: 'price' | 'min' | 'max' | 'type', value: any, index?: number) {
+  updateAdditionalCharge(key: string, field: 'price' | 'percentage' | 'size_tier' | 'over' | 'every' | 'min' | 'max' | 'type', value: any, index?: number) {
     this.pricingState.update(state => {
       if (!state) return state;
       const updated = structuredClone(state);

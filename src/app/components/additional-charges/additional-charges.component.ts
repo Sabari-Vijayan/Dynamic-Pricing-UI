@@ -71,5 +71,5 @@ import { ChargeFieldComponent } from '../charge-field/charge-field.component';
 })
 export class AdditionalChargesComponent {
   charges = input.required<any>();
-  onChargeChange = output<{ key: string, field: string, value: any, index?: number }>();
+  onChargeChange = output<{ key: string, field: 'price' | 'percentage' | 'size_tier' | 'over' | 'every' | 'min' | 'max' | 'type', value: any, index?: number }>();
 }

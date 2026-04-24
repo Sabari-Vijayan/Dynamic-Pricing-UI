@@ -185,7 +185,7 @@ export class ChargeFieldComponent {
   label = input.required<string>();
   data = input.required<any>();
   
-  onChange = output<{ field: string; value: any; index?: number }>();
+  onChange = output<{ field: 'price' | 'percentage' | 'size_tier' | 'over' | 'every' | 'min' | 'max' | 'type'; value: any; index?: number }>();
 
   formattedLabel = computed(() => this.label().replace(/_/g, ' '));
 
@@ -203,7 +203,7 @@ export class ChargeFieldComponent {
 
   isEditable(val: any) { return typeof val === 'number'; }
 
-  update(field: string, event: Event, index?: number) {
+  update(field: 'price' | 'percentage' | 'size_tier' | 'over' | 'every' | 'min' | 'max' | 'type', event: Event, index?: number) {
     const val = (event.target as HTMLInputElement).value;
     this.onChange.emit({ field, value: isNaN(+val) ? val : +val, index });
   }
