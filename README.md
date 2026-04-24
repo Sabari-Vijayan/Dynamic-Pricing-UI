@@ -2,6 +2,8 @@
 
 A professional, high-contrast Angular application designed for managing complex embroidery and product pricing matrices. This portal provides a streamlined interface for updating quantity tiers, unit prices, and global surcharges with real-time state management.
 
+![UI Screenshot](screenshots/screenshot-2026-04-24_10-25-13.png)
+
 ## 🚀 Key Features
 
 - **Tabbed Navigation:** Seamlessly switch between Main Pricing, Product Inserts, FR Specifications, and Global Charges.
